@@ -1,0 +1,7 @@
+services:
+  routing-updater:
+    build: .
+    container_name: remna-routing-updater
+    restart: unless-stopped
+    env_file:
+      - .env
